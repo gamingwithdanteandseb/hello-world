@@ -1,0 +1,9 @@
+from tkinker import *
+def roll():
+    text.delete(0.0, END)
+    text.insert(END, randint(1, 6))
+text = Text(window, width=5, height=1)
+button = Button(window, text = 'roll dice!', command=roll)
+window = Tk()
+text.pack()
+button.pack()
